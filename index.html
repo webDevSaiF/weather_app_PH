@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        height: 100vh;
+        background: url(images/bg-image.jpg) no-repeat;
+        background-size: 100% 100%;
+        background-size: cover;
+      }
+      .weather-card {
+        color: #040624e7;
+        border-radius: 35px;
+        background: #ffffffcb;
+        box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="container py-5 mt-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-8 col-lg-6 col-xl-4">
+            <div class="card weather-card">
+              <div class="card-body p-4">
+                <div class="d-flex weather-status">
+                  <h6 class="flex-grow-1">Warsaw</h6>
+                  <h6 class="time">5:07 PM</h6>
+                </div>
+
+                <div
+                  class="d-flex flex-row justify-content-around align-items-center text-center mt-4 mb-4"
+                >
+                  <div>
+                    <h6 class="display-4 mb-0 font-weight-bold showTemp">
+                      13°C
+                    </h6>
+                    <span class="small w-condition">Stormy</span>
+                  </div>
+                  <div class="weather-status">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                      width="100px"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="flex-grow-1">
+                    <div>
+                      <i class="fas fa-wind fa-fw"></i>
+                      <span class="ms-1 wind-speed">40 km/h </span>
+                    </div>
+                    <div>
+                      <i class="fas fa-diamond-turn-right fa-fw"></i>
+                      <span class="ms-1 wind-direction">North-East </span>
+                    </div>
+                  </div>
+                  <div class="justify-self-end">
+                    <div>
+                      Sunrise: <span class="ms-1 sunrise"> 5.15 AM </span>
+                    </div>
+
+                    <div class="justify-content-between d-flex">
+                      Sunset: <span class="ms-1 sunset"> 6.45 PM </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
